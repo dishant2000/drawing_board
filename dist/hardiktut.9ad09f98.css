@@ -1,0 +1,177 @@
+body{
+    font-family: 'Cabin';
+}
+.canvas-container{
+    margin: auto;
+}
+.canvas-wrapper{
+    border: 5px solid rgb(177, 163, 171);
+    border-radius: 5px;
+    width: fit-content;
+    margin: auto;
+}
+#toolbar{
+    display: flex;
+    background-color:#f8f5f1;
+    width: 600px;
+    margin: 10px auto;
+    border: 1px solid #f8a488;
+    border-radius: 5px;
+}
+#toolbar .toolbtn{
+    background-color: #45526c;
+    padding: 10px 10px 10px 5px;
+    margin: 10px;
+    outline: none;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    font-family: cabin;
+    font-weight: 500;
+    font-size: medium;
+}
+#toolbar .toolbtn.btn-draw{
+    margin: 10px 0px 10px 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#toolbar .toolbtn.active{
+    background-color: #5aa897;
+}
+#toolbar .draw-dropdown{
+    position: relative;
+}
+#toolbar .draw-dropdown .draw-drop-btn{
+
+    background-color: #45526c;
+    padding: 10px 5px;
+    margin: 10px 0px;
+    outline: none;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    font-family: cabin;
+    font-weight: 500;
+    font-size: medium;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#toolbar .draw-dropdown .draw-list{
+    display: none;
+    position: absolute;
+    background-color: #f8f5f1;
+    padding: 10px;
+    font-family: cabin;
+    font-weight: 500;
+    font-size: medium;
+    border: 5px solid #798777;
+    border-radius: 5px;
+    list-style: none;
+    z-index: 999;
+
+}
+#toolbar .draw-dropdown .draw-list.active{
+    display: block;
+}
+#toolbar .draw-dropdown .draw-list li{
+    padding: 5px 0px;
+}
+#toolbar .draw-dropdown .draw-list li::after{
+    content: "";
+    margin-top: 3px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.shape-wrapper .active-draw-btn,.shape-drop-btn,.shape-options{
+    background-color: #45526c;
+    padding: 10px 5px;
+    margin: 10px 0px;
+    outline: none;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    font-family: cabin;
+    font-weight: 500;
+    font-size: medium;
+}
+.shape-wrapper{
+    display: flex;
+    position: relative;
+}
+.shape-wrapper .active-draw-btn{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0;
+}
+.shape-wrapper .active-draw-btn.active{
+    background-color: #5aa897;
+}
+.shape-wrapper .shape-drop-btn{
+    border-radius: 0;
+    margin-left: 0px;
+}
+.shape-wrapper .shape-options{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.shape-wrapper .shape-list{
+    display: none;
+    position: absolute;
+    background-color: #f8f5f1;
+    padding: 10px;
+    font-family: cabin;
+    font-weight: 500;
+    font-size: medium;
+    border: 5px solid #798777;
+    border-radius: 5px;
+    list-style: none;
+    z-index: 999;
+    top: 60px;
+    right: 20px;
+}
+.shape-wrapper .shape-list.active{
+    display: block;
+}
+
+.shape-wrapper .shape-list li{
+    padding: 8px;
+}
+
+.shape-wrapper .shape-list li::after{
+    content: "";
+    margin-top: 3px;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+.shape-wrapper .shape-list li:hover::after{
+    background-color: white;
+}
+.shape-wrapper .shape-list li:hover{
+    background-color: #f8a488;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 800ms;
+}   
+.shape-wrapper .shape-option-list{
+    
+    position: absolute;
+    background-color: #f8f5f1;
+    padding: 10px;
+    font-family: cabin;
+    font-weight: 500;
+    font-size: medium;
+    border: 5px solid #798777;
+    border-radius: 5px;
+    list-style: none;
+    z-index: 999;
+    top: 60px;
+    right: -10px;
+}
+
+/*# sourceMappingURL=/hardiktut.9ad09f98.css.map */

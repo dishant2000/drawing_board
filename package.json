@@ -1,0 +1,19 @@
+{
+  "name": "hardiktut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "animate.css": "^4.1.1",
+    "fabric": "^4.3.1",
+    "konva": "^7.2.5"
+  }
+}
